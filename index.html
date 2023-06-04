@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predizione oraria dell'andamento di Bitcoin</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<body style="background-color: #f2f2f2;">
+	<div class="container">
+		<h1 class="text-center p-2">Predizione oraria dell'andamento di Bitcoin</h1>
+		<h2 class="text-center p-2">Istruzioni</h2>
+		<div class="text-center p-2">Premendo il seguente bottone comparirà una tabella con il prezzo di Bitcoin delle successive 5 ore.</br> I dati sono stati predetti attraverso il nostro modello LSTM.</br>L'orario è con time-zone UTC+0.</div>
+	</div>
+    <form class="text-center" method="POST">
+        <button class="btn btn-primary text-center p-3 my-4" type="submit">Predici valori</button>
+    </form>
+	{% if prediction %}
+        {{ prediction | safe }}
+    {% endif %}
+
+<footer>
+<div class="text-center p-2">
+<p>Sito creato da Andrea Bedei, Giacomo Leo Bertuccioli, Fabio Notaro</p>
+</div>
+</footer>
+</body>
+</html>
