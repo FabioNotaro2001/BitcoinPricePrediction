@@ -6,10 +6,10 @@ This project implements a machine learning model to predict Bitcoin prices using
 
 ## Features
 
-- **Data Collection**: Utilizes historical Bitcoin price data for training the model.
-- **Modeling Techniques**: Implements machine learning algorithms to predict future prices.
-- **Visualization**: Provides graphical representations of predicted vs actual prices.
-- **User Interface**: Includes an interactive interface for users to input parameters and view predictions.
+- **Data Collection** -> utilizes historical Bitcoin price data for training the model
+- **Modeling Techniques** -> implements machine learning algorithms to predict future prices
+- **Visualization** -> provides graphical representations of predicted vs actual prices
+- **User Interface** -> includes an interactive interface for users to input parameters and view predictions.
 
 ## Project Structure
 
@@ -67,6 +67,3 @@ Acknowledgments
     Machine learning models are built using Keras and TensorFlow frameworks.
 
     Special thanks to the open-source community for their invaluable contributions.
-
----
- 
